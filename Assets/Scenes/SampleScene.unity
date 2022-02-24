@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64522239eb9df7b4ea5a0bc05ef91abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickSpeed: 0.3
+  pickSpeed: 1.5
   lockRotationSpeed: 1.5
   lockRetentionSpeed: 0.4
   lockleniency: 0.001

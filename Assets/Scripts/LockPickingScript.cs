@@ -103,7 +103,7 @@ public class LockPickingScript : MonoBehaviour
 
     private void Pick()
     {
-        PickPosition += Input.GetAxisRaw("Horizontal") * Time.deltaTime * pickSpeed;
+        PickPosition += Input.GetAxisRaw("Mouse X") * Time.deltaTime * pickSpeed;
     }
 
     private void Lock()
