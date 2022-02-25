@@ -64,9 +64,21 @@ public class LockPickingScript : MonoBehaviour
 
     private void Update()
     {
+
         if (!gameDone)
         {
-            if (Input.GetAxisRaw("Vertical") == 0)
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                if(Cursor.lockState == CursorLockMode.Locked)
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                else if (Cursor.lockState == CursorLockMode.None)
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                }
+            }
+                if (Input.GetAxisRaw("Vertical") == 0)
             {
                 Pick();
             }
